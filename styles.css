@@ -1,0 +1,128 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* Tab Bar */
+.tab-bar {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ccc;
+    padding: 5px;
+    height: 40px;
+}
+
+.tab {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    margin: 0 5px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    padding: 5px;
+}
+
+.tab.active {
+    background-color: #e0e0e0;
+    font-weight: bold;
+    border-bottom: 3px solid #4caf50; /* Active tab indicator */
+}
+
+.new-tab {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.tab:hover, .new-tab:hover {
+    background-color: #d6d6d6;
+}
+
+/* Address Bar */
+.address-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 5px 15px;
+    height: 50px;
+}
+
+.nav-buttons button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.nav-buttons button:hover {
+    color: #4caf50;
+}
+
+.address-bar input {
+    flex: 1;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.menu-button button {
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.menu-button button:hover {
+    color: #4caf50;
+}
+
+/* Content Area */
+.content-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: calc(100vh - 90px); /* Adjust height to account for tab bar and address bar */
+    text-align: center;
+}
+
+.content-area h1 {
+    font-size: 36px;
+    color: #4caf50;
+}
+
+.content-area p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    color: #777;
+}

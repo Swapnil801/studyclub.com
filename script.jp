@@ -1,0 +1,18 @@
+// Handle Tab Switching
+const tabs = document.querySelectorAll('.tab');
+tabs.forEach((tab, index) => {
+    tab.addEventListener('click', () => {
+        document.querySelector('.tab.active').classList.remove('active');
+        tab.classList.add('active');
+        alert(`Switched to Tab ${index + 1}`);
+    });
+});
+
+// Handle Navigation Buttons
+const backButton = document.querySelector('.nav-buttons button:nth-child(1)');
+const forwardButton = document.querySelector('.nav-buttons button:nth-child(2)');
+const reloadButton = document.querySelector('.nav-buttons button:nth-child(3)');
+
+backButton.addEventListener('click', () => alert('Back button clicked!'));
+forwardButton.addEventListener('click', () => alert('Forward button clicked!'));
+reloadButton.addEventListener('click', () => location.reload());
